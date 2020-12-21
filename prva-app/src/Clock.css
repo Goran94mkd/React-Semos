@@ -1,0 +1,15 @@
+#divClock{
+  background-color: rgb(75, 65, 209);
+  width: 250px;
+}
+
+#h2 {
+  color: rgb(255, 255, 15);
+  text-align: center;
+}
+
+#h1 {
+  color: rgb(255, 255, 15);
+  text-align: center;
+  font-size: 30px;
+}

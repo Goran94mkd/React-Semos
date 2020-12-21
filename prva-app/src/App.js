@@ -3,6 +3,7 @@ import './App.css'
 import Button from './Button.js'
 import Calc from './Calc'
 import Counter from './Counter.js'
+import Clock from './Clock.js'
 
 class App extends React.Component {
 
@@ -13,6 +14,7 @@ class App extends React.Component {
         <Button greeting='Welcome '/>
         <Counter />
         <Calc />
+        <Clock />
       </div>
     )
   }
