@@ -10,10 +10,10 @@ import CalcFuncComponent from './components/CalcFuncComponent.js'
 
 
 const items = [
-  'Home',
-  'Books',
-  'Authors',
-  'Favourites'
+  // 'Home',
+  // 'Books',
+  // 'Authors',
+  // 'Favourites'
 ]
 
 class App extends React.Component {
