@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, /*useEffect*/ } from 'react'
 import '../styles/Toolbar.css'
 import logo from '../images/example-logo.png'
 
@@ -19,18 +19,25 @@ const Toolbar = (props) => {
     const newState = counter + 1
     setCounter(newState)
   }
+  // useEffect(() => {
+  //   alert('The menu items are empty!')
+  // }, [menuItems])
 
-  const emptyMenuItems = () => {
-    if(menuItems.length > 1){
-      return menuItems.map((element) => (
-        <li className="toolbar-item">{element}</li>
-      ))
-    }else{
-      return alert('The MenuItems are empty. Browser can not load the page!')
+  // const emptyMenuItems = () => {
+  //   if(menuItems.length > 1){
+  //     return menuItems.map((element) => (
+  //       <li className="toolbar-item">{element}</li>
+  //     ))
+  //   }else{
+  //     return alert('The menuItems are empty. Browser can not load the page!')
+  //   }
+  // }
+
+  // emptyMenuItems()
+    // conditional rendering
+    if (menuItems.length < 1) {
+      return <div>Error!</div>
     }
-  }
-
-  emptyMenuItems()
 
   return (
     <div>
