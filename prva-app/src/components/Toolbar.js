@@ -12,7 +12,7 @@ const Toolbar = (props) => {
   const [counter, setCounter] = useState(0)
 
   if(!props.warn) {
-    alert('menuItems is empty. Browser can not load the page')
+    alert('menuItems are empty. Browser can not load the page')
   }
 
   const decrement = () => {
